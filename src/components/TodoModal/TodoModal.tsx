@@ -27,6 +27,10 @@ export const TodoModal: React.FC<Props> = ({ todo, onModalCloseClick }) => {
       .finally(() => setLoading(false));
   }, [todo]);
 
+  if (!todo) {
+    return null;
+  }
+
   return (
     <div className="modal is-active" data-cy="modal">
       <div className="modal-background" />
