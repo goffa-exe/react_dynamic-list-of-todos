@@ -1,3 +1,5 @@
+import React from 'react';
+
 type Props = {
   onFilterChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   onInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
